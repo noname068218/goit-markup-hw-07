@@ -27,6 +27,69 @@
             <li><a class="alert link" href="./portfolio.html">Portfolio</a></li>
             <li><a class="alert link" href="">Contacts</a></li>
           </ul>
+
+          <button
+            class="menu-toggle js-open-menu btn"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-hamburger" width="32px" height="32px">
+              <use href="./images/icons.svg#burger-icon"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class=".icon-close-link" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu">
+              <li><a class="alert link color-nav-selected line" href="./index.html">Studio</a></li>
+              <li><a class="alert link" href="./portfolio.html">Portfolio</a></li>
+              <li><a class="mobile-link link" href="">Contacts</a></li>
+              <li> </li
+            ></ul>
+
+            <address class="menu-adress-section">
+              <ul class="menu-adress-list list">
+                <li class="menu-adress-li">
+                  <a href="tel:+110001111111" class="menu-address-link link active-link"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="menu-adress-li">
+                  <a href="mailto:info@devstudio.com" class="menu-address-link-number link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="list social-link-mobile">
+              <li class="icons-blu"
+                ><a class="link-icon" href=""
+                  ><svg class="social-icons" width="16" height="16">
+                    <use href="./images/icons.svg#instagram"></use></svg></a
+              ></li>
+              <li class="icons-blu"
+                ><a class="link-icon" href=""
+                  ><svg class="social-icons" width="16" height="16">
+                    <use href="./images/icons.svg#twitter"></use></svg></a
+              ></li>
+              <li class="icons-blu"
+                ><a class="link-icon" href=""
+                  ><svg class="social-icons" width="16" height="16">
+                    <use href="./images/icons.svg#facebook"></use></svg></a
+              ></li>
+              <li class="icons-blu"
+                ><a class="link-icon" href=""
+                  ><svg class="social-icons" width="16" height="16">
+                    <use href="./images/icons.svg#linkedin"></use></svg></a
+              ></li>
+            </ul>
+          </div>
         </nav>
         <address class="contacts">
           <ul class="list main-contacts">
@@ -47,7 +110,7 @@
 
     <main>
       <section class="main-page">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-text">Effective Solutions Your Business</h1>
 
           <button class="button-order" data-modal-open type="button">Order Service </button>
@@ -105,7 +168,7 @@
                 </svg>
               </div>
               <h3 class="section-two">Technologies</h3>
-              <p class="text">
+              <p class="text not-mr">
                 Design practice focused on digital experiences. We bring forth a deep passion for
                 problem-solving.
               </p>
@@ -140,10 +203,15 @@
           <h2 class="our-team">Our Team</h2>
           <ul class="list staff">
             <li class="back">
-              <img src="./images/humans/mark.jpg" alt="Mark" width="264" />
-              <div class="row ellipse">
+              <img
+                srcset="./images/humans/img_team@1x.jpg 1x, ./images/humans/img@2x.jpg 2x"
+                src="./images/humans/mark.jpg"
+                alt="Mark"
+                width="264"
+              />
+              <div class="row">
                 <h3 class="names optinal-row">Mark Guerrero</h3>
-                <p class="text last-row">Product Designer</p>
+                <p class="last-row">Product Designer</p>
                 <ul class="list social-link">
                   <li class="icons-blu"
                     ><a class="link-icon" href=""
@@ -169,10 +237,15 @@
               </div>
             </li>
             <li class="back">
-              <img src="./images/humans/tom.jpg" alt="Tom" width="264" />
-              <div class="row ellipse">
+              <img
+                srcset="./images/humans/img_team@1x-1.jpg 1x, ./images/humans/img@2x-1.jpg 2x"
+                src="./images/humans/tom.jpg"
+                alt="Tom"
+                width="264"
+              />
+              <div class="row">
                 <h3 class="names optinal-row">Tom Ford</h3>
-                <p class="text last-row">Frontend Developer</p>
+                <p class="last-row">Frontend Developer</p>
                 <ul class="list social-link">
                   <li class="icons-blu"
                     ><a class="link-icon" href=""
@@ -198,10 +271,15 @@
               </div>
             </li>
             <li class="back">
-              <img src="./images/humans/camila.jpg" alt="Camila" width="264" />
-              <div class="row ellipse">
+              <img
+                srcset="./images/humans/img_team@1x-2.jpg 1x, ./images/humans/img@2x-2.jpg 2x"
+                src="./images/humans/camila.jpg"
+                alt="Camila"
+                width="264"
+              />
+              <div class="row">
                 <h3 class="names optinal-row">Camila Garcia</h3>
-                <p class="text last-row">Marketing</p>
+                <p class="last-row">Marketing</p>
                 <ul class="list social-link">
                   <li class="icons-blu"
                     ><a class="link-icon" href=""
@@ -227,10 +305,15 @@
               </div>
             </li>
             <li class="back">
-              <img src="./images/humans/daniel.jpg" alt="daniel" width="264" />
-              <div class="row ellipse">
+              <img
+                srcset="./images/humans/img_team@1x-3.jpg 1x, ./images/humans/img@2x-3.jpg 2x"
+                src="./images/humans/daniel.jpg"
+                alt="daniel"
+                width="264"
+              />
+              <div class="row">
                 <h3 class="names optinal-row">Daniel Wilson</h3>
-                <p class="text last-row">UI Designer</p>
+                <p class="last-row">UI Designer</p>
                 <ul class="list social-link">
                   <li class="icons-blu"
                     ><a class="link-icon" href=""
@@ -434,7 +517,15 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/jquery.inputmask.min.js"></script>
     <!--input mask-->
-    <script src="./js/modal.js"></script>
+
     <script src="./js/inputmask.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
