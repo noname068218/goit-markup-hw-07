@@ -1578,11 +1578,6 @@ img {
   }
 }
 
-@media only screen and (max-width: maxwidthpx) {
-   {
-  }
-}
-
 .btn-footer {
   min-width: 165px;
   height: 40px;
